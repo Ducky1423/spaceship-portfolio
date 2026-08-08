@@ -1,16 +1,22 @@
+import Starfield from "@/components/Starfield";
+
 export default function Home() {
   return (
     <main className="min-h-screen flex items-center justify-center px-6">
+      <Starfield />
+
       <div
         className="
-          panel
-          glow
-          scan-line
-          max-w-3xl
-          w-full
-          p-12
-          text-center
-        "
+        panel
+        glow
+        scan-line
+        relative
+        z-10
+        max-w-3xl
+        w-full
+        p-12
+        text-center
+      "
       >
         <p className="text-cyan-300 tracking-[0.3em] uppercase text-sm">
           Space Command Interface
