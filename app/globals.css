@@ -22,6 +22,7 @@ body {
   background: var(--background);
   color: var(--text);
   overflow-x: hidden;
+  min-width: 0;
   font-family: var(--font-space);
 }
 
