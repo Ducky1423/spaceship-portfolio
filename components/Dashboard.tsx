@@ -1,12 +1,12 @@
 "use client";
 
 import {
-  FaSatelliteDish,
   FaTools,
   FaBroadcastTower,
 } from "react-icons/fa";
 
 import Reactor from "@/components/Reactor";
+import Radar from "@/components/Radar";
 
 interface SystemCardProps {
   icon: React.ReactNode;
@@ -132,12 +132,7 @@ export default function Dashboard() {
       <main className="grid w-full min-w-0 grid-cols-1 gap-5 md:grid-cols-2">
 
         {/* Navigation */}
-        <SystemCard
-          icon={<FaSatelliteDish />}
-          name="Navigation"
-          description="Navigation and orbital tracking systems."
-          status="RADAR READY"
-        />
+        <Radar />
 
         {/* Reactor */}
         <Reactor />
