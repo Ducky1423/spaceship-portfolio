@@ -2,10 +2,11 @@
 
 import {
   FaSatelliteDish,
-  FaBolt,
   FaTools,
   FaBroadcastTower,
 } from "react-icons/fa";
+
+import Reactor from "@/components/Reactor";
 
 interface SystemCardProps {
   icon: React.ReactNode;
@@ -139,12 +140,7 @@ export default function Dashboard() {
         />
 
         {/* Reactor */}
-        <SystemCard
-          icon={<FaBolt />}
-          name="Reactor Core"
-          description="Primary ship power generation system."
-          status="POWER STABLE"
-        />
+        <Reactor />
 
         {/* Command Center */}
         <div
